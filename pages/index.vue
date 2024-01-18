@@ -1,80 +1,80 @@
-<script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
-
-useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImage({
-  component: 'Landing',
-  title: page.value.title,
-  description: page.value.description
-})
-</script>
-
 <template>
-  <div>
-    <ULandingHero :title="page.hero.title" :description="page.hero.description" :links="page.hero.links">
-      <template #headline>
-        <UBadge v-if="page.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
-          <NuxtLink :to="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
-            <span class="absolute inset-0" aria-hidden="true" />
-          </NuxtLink>
+  <div
+    class="flex flex-wrap justify-between w-full px-10 md:px-16 py-10 space-y-2"
+  >
+    <NuxtLink to="/" class="flex flex-row items-center">
+      <img src="/collectivo-rgb.png" class="object-scale-down h-10 w-full" />
+    </NuxtLink>
 
-          {{ page.hero.headline.label }}
-
-          <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon" class="ml-1 w-4 h-4 pointer-events-none" />
-        </UBadge>
-      </template>
-
-      <Placeholder />
-
-      <ULandingLogos :title="page.logos.title" align="center">
-        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
-      </ULandingLogos>
-    </ULandingHero>
-
-    <ULandingSection :title="page.features.title" :description="page.features.description" :headline="page.features.headline">
-      <UPageGrid id="features" class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
-        <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
-      </UPageGrid>
-    </ULandingSection>
-
-    <ULandingSection :title="page.pricing.title" :description="page.pricing.description" :headline="page.pricing.headline">
-      <UPricingGrid id="pricing" compact class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
-        <UPricingCard v-for="(plan, index) in page.pricing.plans" :key="index" v-bind="plan" />
-      </UPricingGrid>
-    </ULandingSection>
-
-    <ULandingSection :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
-      <UPageColumns id="testimonials" class="xl:columns-4 scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
-        <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
-          <ULandingTestimonial v-bind="testimonial" />
-        </div>
-      </UPageColumns>
-    </ULandingSection>
-
-    <ULandingSection class="bg-primary-50 dark:bg-primary-400 dark:bg-opacity-10">
-      <ULandingCTA v-bind="page.cta" :card="false" />
-    </ULandingSection>
-
-    <ULandingSection id="faq" :title="page.faq.title" :description="page.faq.description" class="scroll-mt-[var(--header-height)]">
-      <ULandingFAQ
-        multiple
-        :items="page.faq.items"
-        :ui="{
-          button: {
-            label: 'font-semibold',
-            trailingIcon: {
-              base: 'w-6 h-6'
-            }
-          }
-        }"
-        class="max-w-4xl mx-auto"
-      />
-    </ULandingSection>
+    <div class="flex flex-row space-x-2">
+      <a
+        href="https://discord.gg/42MWureAYW"
+        target="_blank"
+        aria-label="Discord"
+        class="header-icon"
+      >
+        <UIcon name="i-bxl-discord-alt" class="text-3xl m-0 p-0 block" />
+      </a>
+      <a
+        href="https://github.com/collectivo-dev/collectivo"
+        target="_blank"
+        aria-label="Github"
+        class="header-icon"
+      >
+        <UIcon name="i-bxl-github" class="text-3xl m-0 p-0 block" />
+      </a>
+    </div>
+  </div>
+  <div class="h-full mx-auto flex justify-center items-center">
+    <div class="space-y-6 max-w-3xl w-full mx-10 md:mx-16 md:mt-32">
+      <h1
+        class="text-5xl md:text-7xl font-bold text-[#3b2476] text-transparent bg-clip-text cv-gradient"
+      >
+        A modular platform for your community.
+      </h1>
+      <p class="text-2xl text-gray-700 italic leading-9">
+        A flexible framwork to build your own custom platform for
+        <span class="font-semibold">collaboration</span>,
+        <span class="font-semibold">participation</span> and
+        <span class="font-semibold">data management</span>.
+      </p>
+      <div class="flex flex-wrap gap-5">
+        <a href="https://github.com/collectivo-dev/collectivo" target="_blank">
+          <UButton
+            size="xl"
+            class="rounded-xl cv-gradient hover:transparent font-semibold"
+          >
+            <UIcon name="i-bxl-github" />
+            Try it out
+          </UButton></a
+        >
+        <a href="https://discord.gg/42MWureAYW" target="_blank"
+          ><UButton
+            size="xl"
+            class="rounded-xl cv-gradient hover:transparent font-semibold"
+          >
+            <UIcon name="i-bxl-discord-alt" />
+            Join the discussion
+          </UButton></a
+        >
+      </div>
+    </div>
   </div>
 </template>
+
+<style type="scss">
+html {
+  font-family: "Poppins";
+}
+
+.header-icon {
+  @apply p-1;
+  &:hover {
+    @apply bg-slate-200 rounded-full;
+  }
+}
+
+.cv-gradient {
+  @apply bg-gradient-to-br from-pink-400 to-[#3b2476];
+}
+</style>

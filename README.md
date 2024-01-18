@@ -1,14 +1,6 @@
-# Nuxt UI Pro - Landing template
+# Nuxt 3 Minimal Starter
 
-This starter lets you get started with [Nuxt UI Pro](https://ui.nuxt.com/pro) quickly.
-
-[![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
-
-- [Live demo](https://nuxt-ui-pro-template-landing.vercel.app)
-- [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/landing)
-- [Documentation](https://ui.nuxt.com/pro/guide)
-
-https://github.com/nuxt-ui-pro/landing/assets/904724/c7dd64a4-a09c-4cab-9572-92a02a5e06f9
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
@@ -81,7 +73,3 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.

@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     download: true,
-    families: { Poppins: [400, 500, 600, 700, 800, 900] },
+    families: {
+      Poppins: [400, 500, 600, 700, 800, 900],
+      Nunito: [400, 500, 600, 700, 800, 900],
+    },
   },
 });

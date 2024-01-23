@@ -1,7 +1,3 @@
-<!-- #561a62 -->
-<!-- On white: #914c95 -->
-<!-- End of gradient #7f248d -->
-
 <template>
   <div
     id="cv-header"

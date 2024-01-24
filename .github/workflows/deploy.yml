@@ -10,13 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
       - run: corepack enable
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
       # Pick your own package manager and build script
-      - run: npm install
-      - run: npm run build --preset=github_pages
+      - run: pnpm install
+      - run: pnpm run build --preset=github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

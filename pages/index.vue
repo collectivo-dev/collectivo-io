@@ -63,10 +63,10 @@
           <div class="basis-full sm:basis-1/2 p-5">
             <h2>Community app</h2>
             <p>
-              Create a flexible web app built with
-              <a href="https://nuxt.com/" target="_blank">Nuxt</a>. Use modules
-              for memberships, payments, tasks, decisions, and more. Or add your
-              own custom modules.
+              Offer a participatory platform to your community. Choose modules
+              for memberships, payments, tasks, decisions, and more. Or create
+              your own custom modules with
+              <a href="https://nuxt.com/" target="_blank">Nuxt</a>.
             </p>
           </div>
           <div class="basis-full sm:basis-1/2 p-5">
@@ -75,33 +75,30 @@
               class="rounded-xl overflow-hidden" />
           </div>
         </div>
-        <div class="flex flex-wrap">
-          <div class="basis-full sm:basis-1/2 p-5 hidden md:block">
-            <img
-              src="/features/studio1.png"
-              class="rounded-xl overflow-hidden" />
-          </div>
+        <div class="flex flex-col sm:flex-row-reverse">
           <div class="basis-full sm:basis-1/2 p-5">
             <h2>Data studio</h2>
             <p>
               Enjoy full control over your data with
               <a href="https://directus.io/" target="_blank">Directus</a>.
-              Manage content, control access, track changes, design
-              visualizations, and create automated workflows.
+              Manage content, create visualizations, define user roles, track
+              changes, and automate workflows.
             </p>
           </div>
-          <div class="basis-full sm:basis-1/2 p-5 block md:hidden">
-            <img src="/features/studio1.png" />
+          <div class="basis-full sm:basis-1/2 p-5">
+            <img
+              src="/features/studio1.png"
+              class="rounded-xl overflow-hidden" />
           </div>
         </div>
         <div class="flex flex-wrap">
           <div class="basis-full sm:basis-1/2 p-5">
             <h2>Single sign-on</h2>
             <p>
-              Control access to your applications with
+              Secure your services with
               <a href="https://www.keycloak.org/" target="_blank">Keycloak</a>.
-              Users can sign in once and will be authenticated with all of your
-              services.
+              Use a central authentication system and user database for multiple
+              applications.
             </p>
           </div>
           <div class="basis-full sm:basis-1/2 p-5">
@@ -109,13 +106,7 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap">
-          <div class="basis-full sm:basis-1/2 p-5 hidden md:block">
-            <img
-              src="/features/github.png"
-              class="rounded-xl overflow-hidden" />
-          </div>
-
+        <div class="flex flex-col sm:flex-row-reverse">
           <div class="basis-full sm:basis-1/2 p-5">
             <h2>Open-source</h2>
             <p>
@@ -129,8 +120,10 @@
               under the AGPL-3.0 license.
             </p>
           </div>
-          <div class="basis-full sm:basis-1/2 p-5 block md:hidden">
-            <img src="/features/github.png" />
+          <div class="basis-full sm:basis-1/2 p-5">
+            <img
+              src="/features/github.png"
+              class="rounded-xl overflow-hidden" />
           </div>
         </div>
       </div>
@@ -161,7 +154,10 @@
         <h2>Collectivo community</h2>
       </div>
       <div id="partners" class="flex flex-wrap items-center gap-10">
-        <a href="https://convive.io/" target="_blank" class="block">
+        <a href="https://wien.arbeiterkammer.at/digifonds" target="_blank">
+          <img src="/logos/digifonds.jpg" />
+        </a>
+        <a href="https://convive.io/" target="_blank">
           <img src="/logos/convive.png" />
         </a>
         <a href="https://mila.wien/" target="_blank">
@@ -169,12 +165,6 @@
         </a>
         <a href="https://www.hermes.at/" target="_blank">
           <img src="/logos/hermes.png" />
-        </a>
-        <a href="https://wien.arbeiterkammer.at/digifonds" target="_blank">
-          <img src="/logos/digifonds.jpg" />
-        </a>
-        <a href="https://smartat.coop" target="_blank">
-          <img src="/logos/smart.png" />
         </a>
       </div>
       <div class="h-24"></div>
@@ -208,11 +198,11 @@
           <div class="basis-full sm:basis-1/2 p-5">
             <p>
               <span class="font-bold">Links</span>
-              <br />Email:
+              <br />Contact:
               <a href="mailto:info@collectivo.io" target="_blank">
                 info@collectivo.io
               </a>
-              <br />GitHub:
+              <br />Repository:
               <a
                 href="https://github.com/collectivo-dev/collectivo"
                 target="_blank"
@@ -223,8 +213,8 @@
           <div class="basis-full sm:basis-1/2 p-5">
             <p>
               <span class="font-bold">Impressum</span>
-              <br />Smart Coop Austria <br />SMartAt e. Gen.
-              <br />Gumpendorferstraße 63b <br />1060 Wien
+              <br />Convive* GesbR<br />Labor für das gute Leben
+              <br />Arnsteingasse 22/30 <br />1150 Wien
             </p>
           </div>
         </div>

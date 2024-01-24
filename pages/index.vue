@@ -1,33 +1,5 @@
 <template>
   <div
-    id="cv-header"
-    class="flex flex-wrap justify-between w-full px-10 md:px-16 py-10 space-y-2">
-    <NuxtLink to="/" class="flex flex-row items-center">
-      <span
-        class="font-[Nunito] italic font-black text-4xl cv-gradient-text pr-5">
-        collectivo
-      </span>
-    </NuxtLink>
-
-    <div class="flex flex-row space-x-2 text-3xl text-gray-800">
-      <a
-        href="https://discord.gg/42MWureAYW"
-        target="_blank"
-        aria-label="Discord"
-        class="header-icon">
-        <UIcon name="i-bxl-discord-alt" class="block" />
-      </a>
-      <a
-        href="https://github.com/collectivo-dev/collectivo"
-        target="_blank"
-        aria-label="Github"
-        class="header-icon">
-        <UIcon name="i-bxl-github" class="block" />
-      </a>
-    </div>
-  </div>
-
-  <div
     id="cv-page"
     class="h-full px-10 mx-auto flex justify-center items-center">
     <div class="max-w-3xl w-full mt-24 md:mt-32">
@@ -198,16 +170,17 @@
           <div class="basis-full sm:basis-1/2 p-5">
             <p>
               <span class="font-bold">Links</span>
-              <br />Contact:
+              <br />
               <a href="mailto:info@collectivo.io" target="_blank">
-                info@collectivo.io
+                Email: info@collectivo.io
               </a>
-              <br />Repository:
+              <br />
               <a
                 href="https://github.com/collectivo-dev/collectivo"
                 target="_blank"
-                >collectivo-dev</a
+                >GitHub Repository</a
               >
+              <br /><NuxtLink to="/privacy">Privacy</NuxtLink>
             </p>
           </div>
           <div class="basis-full sm:basis-1/2 p-5">
@@ -220,6 +193,7 @@
         </div>
       </div>
       <div class="h-12"></div>
+
       <!-- END CONTENT -->
     </div>
   </div>
@@ -254,6 +228,10 @@ h4,
 h5,
 h6 {
   @apply font-[Nunito] font-black cv-gradient-text;
+}
+
+h1 {
+  @apply text-5xl pb-5;
 }
 
 h2 {

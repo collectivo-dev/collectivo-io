@@ -17,14 +17,10 @@
     <br />
     <h2>Server protocols</h2>
     The server from which this website is provided stores information that is
-    automatically transmitted to us by your browser in so-called log files. This
-    data will be automatically deleted after 2 months. They contain the
-    following information:
-    <br />
-    <br />
-    Browser type and browser version, Operating system used, Referrer URL (i.e.
-    the page from which you came to us), The IP address of the accessing
-    computer, Time of request
+    automatically transmitted to us by your browser in so-called log files. They
+    contain the following information: Browser type and browser version,
+    Operating system used, Referrer URL (i.e. the page from which you came to
+    us), The IP address of the accessing computer, Time of request
     <br />
     <br />
     This data is used for technical monitoring of the web server and for
@@ -57,6 +53,6 @@
     restriction, data portability, revocation and objection. If you believe that
     the processing of your data violates data protection law or your data
     protection rights have been violated in any other way, you can complain to
-    the supervisory authority. In Austria this is the data protection authority.
+    the supervisory authority.
   </div>
 </template>
